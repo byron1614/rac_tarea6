@@ -27,7 +27,7 @@ const guardar = async (evento) => {
   const body = new FormData(formulario);
   body.append('tipo', 1);
   body.delete('cliente_id');
-  const url = '/rac_tarea6_1/controladores/clientes/index.php';
+  const url = '/rac_tarea6/controladores/clientes/index.php';
   const config = {
     method: 'POST',
     body,
