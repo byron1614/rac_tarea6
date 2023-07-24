@@ -67,7 +67,7 @@ const guardar = async (evento) => {
 const buscar = async () => {
   let cliente_nombre = formulario.cliente_nombre.value;
   let cliente_nit = formulario.cliente_nit.value;
-  const url = `/rac_tarea6_1/controladores/clientes/index.php?cliente_nombre=${cliente_nombre}&cliente_nit=${cliente_nit}`;
+  const url = `/rac_tarea6/controladores/clientes/index.php?cliente_nombre=${cliente_nombre}&cliente_nit=${cliente_nit}`;
   const config = {
     method: 'GET'
   };
@@ -193,7 +193,7 @@ const modificar = async () => {
   body.append('tipo', 2);
   body.append('cliente_id', cliente_id)
 
-  const url = '/rac_tarea6_1/controladores/clientes/index.php';
+  const url = '/rac_tarea6/controladores/clientes/index.php';
   const config = {
     method: 'POST',
 
@@ -244,7 +244,7 @@ const modificar = async () => {
     });
   
     if (result.isConfirmed) {
-      const url = `/rac_tarea6_1/controladores/clientes/index.php`;
+      const url = `/rac_tarea6/controladores/clientes/index.php`;
       const body = new FormData();
       body.append('tipo', 3);
       body.append('cliente_id', id);
